@@ -1,3 +1,3 @@
-# 🎄 Advent of Code 2022 solutions - Typescript 🎄
+# 🎄 Advent of Code 2023 solutions - Typescript 🎄
 
-AOC: https://adventofcode.com/2022
+AOC: https://adventofcode.com/2023
