@@ -1,5 +1,5 @@
-export function splitIntoLines(input: string, trim: boolean = false) {
-  var lines = input.split('\r\n');
+export function splitIntoLines(input: string, trim = false) {
+  let lines = input.split('\n');
 
   if (trim) {
     lines = lines.map((line) => line.trim());
