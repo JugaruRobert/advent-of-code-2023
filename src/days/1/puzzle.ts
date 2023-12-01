@@ -31,11 +31,10 @@ export default class ConcretePuzzle extends Puzzle {
   }
 
   private convertStringDigitsToNumbers(line: string) {
-    console.log(line);
     this.stringDigits.forEach(
-      (digit, index) => (line = line.replace(digit, (index + 1).toString()))
+      (digit, index) =>
+        (line = line.split(digit).join(`${digit}${index + 1}${digit}`))
     );
-    console.log(line);
     return line;
   }
 
