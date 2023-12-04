@@ -120,7 +120,7 @@ export default class ConcretePuzzle extends Puzzle {
         valid = true;
 
         if (lines[x][y] === '*') {
-          gears.add(x + '' + y);
+          gears.add(`${x}${y}`);
         }
       }
     }
