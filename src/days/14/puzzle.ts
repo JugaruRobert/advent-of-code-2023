@@ -16,7 +16,7 @@ export default class ConcretePuzzle extends Puzzle {
     const system = splitIntoLines(this.input).map((line) => line.split(''));
 
     const { allRepeatingCycles, firstRepeatingCycle } =
-      this.getNrUniqueCycles(system);
+      this.getRepeatingCycles(system);
 
     const nrTilts =
       firstRepeatingCycle +
@@ -29,7 +29,7 @@ export default class ConcretePuzzle extends Puzzle {
     return this.computeLoad(system);
   }
 
-  private getNrUniqueCycles(system: string[][]) {
+  private getRepeatingCycles(system: string[][]) {
     const systemClone = structuredClone(system);
     const uniqueCycles: Record<string, number> = {};
     for (let i = 0; i < this.cyclesToCompute; i++) {
